@@ -1,0 +1,247 @@
+/*!For Navbar Section Starts*/
+.navbar_main {
+    width: 90%;
+    margin: auto;
+}
+.navbar_inner {
+    width: 100%;
+}
+.nav_one {
+    width: 100%;
+}
+.nav_two {
+    width: 100%;
+}
+.for_logo_main {
+    width: 50%;
+}
+.for_slogan_main {
+    width: 50%;
+}
+.for_logo_inner {
+    width: 100%;
+}
+.for_logo_img {
+    width: 25%;
+}
+.for_logo_img img{
+    width: 100%;
+}
+.for_logo_txt {
+    width: 90%;
+}
+.for_slogan_inner {
+    width: 100%;
+}
+.for_logo_txt .for_heading p {
+    font-family: "Lora", serif;
+    font-weight: 800;
+    font-size: 26px;
+    color: rgb(65, 5, 5);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.for_logo_txt .for_txt p {
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(177, 177, 177);
+}
+.for_slogan_inner p {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-align: end;
+    text-shadow: 2px 2px 2px rgb(177, 177, 177);
+}
+.nav_menu_main {
+    width: 100%;
+}
+.nav_menu_inner {
+    background-color: rgba(65, 5, 5);
+    height: 50px;
+    border-radius: 150px 150px;
+    -webkit-border-radius: 150px 150px;
+    -moz-border-radius: 150px 150px;
+    -ms-border-radius: 150px 150px;
+    -o-border-radius: 150px 150px;
+    box-shadow: 1px 0 0 1px rgba(0, 0, 0, 0.2),
+    -1px 0 0 1px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.2),
+    0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+
+}
+.nav_menu_inner a {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+/*!For Navbar Section Ends*/
+/*!Live Radio Starts*/
+.live_radio_main {
+    width: 100%;
+    margin-top: 30px;
+}
+.live_radio_inner {
+    width: 100%;
+}
+.live_radio_title_main p {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: rgba(65, 5, 5);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.live_radio_title_main p span{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(240, 7, 7);
+}
+.radio_player {
+    width: 12%;
+}
+.radio_player_inner {
+    width: 100%;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.radio_player_inner span {
+    font-size: 24px;
+    color: rgba(65, 5, 5);
+}
+.radio_player_inner #playPause {
+    color: rgb(190, 174, 174);
+}
+
+
+
+/*!Banner Section Starts*/
+.banner_main {
+    width: 90%;
+    margin: 50px auto 0 auto;
+    height: 500px;
+    border: 5px solid rgb(65, 5, 5);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.banner_inner {
+    width: 96%;
+    margin: auto;
+    height: 440px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/banner.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+.content_main {
+    width: 100%;
+    height: 440px;
+}
+.content_main .heading_small_txt p {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #a55f02;
+}
+.content_main .heading_big_txt p {
+    width: 100%;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    text-shadow: 2px 2px 2px white;
+    background-color: rgba(122, 2, 2, 0.3);
+    padding: 20px;
+}
+.content_main .txt p {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.content_main button {
+    margin-top: 20px;
+    width: 100px;
+    padding: 10px;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgb(65, 5, 5);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+/*!Banner Section Ends*/
+/*!Slider Section Starts*/
+.slider_main {
+    width: 100%;
+    margin-top: 80px;
+}
+.slider_inner {
+    width: 90%;
+    margin: auto;
+}
+.first_slider {
+    width: 100%;
+}
+.item {
+    width: 100%;
+    border: 5px solid rgb(65, 5, 5);
+    padding: 20px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.item_inner {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(65, 5, 5);
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.item_inner span {
+    font-size: 40px;
+}
+.item_inner .heading {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.item_inner button {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #d88f07;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.owl-theme .owl-dots .owl-dot span {
+    border: 1px solid rgb(65, 5, 5);
+}
+/*!Slider Section Ends*/

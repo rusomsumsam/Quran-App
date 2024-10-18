@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css" integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css" integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/v5-font-face.min.css" integrity="sha512-DcECXqwZmt1qB8pmbplND75YoND3xBL1h4/LGQ+0zoizkoAKI+BniMoEF/JsZ/vcnsr9X5NOGaB63jLmOxgJrA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--*Navbar Section Starts-->
+    <section class="navbar_main">
+        <div class="navbar_inner">
+            <div class="nav_one flex flex-row items-center">
+                <div class="for_logo_main">
+                    <div class="for_logo_inner flex flex-row items-center">
+                        <div class="for_logo_img">
+                            <img src="img/logo.webp" alt="logo">
+                        </div>
+                        <div class="for_logo_txt">
+                            <div class="for_heading">
+                                <p>The Light Of Truth</p>
+                            </div>
+                            <div class="for_txt">
+                                <p>The Official Website of The Light of Truth Community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="for_slogan_main">
+                    <div class="for_slogan_inner flex justify-end">
+                        <p>Believers in the Light of Truth, guided by the principles of <br>spiritual enlightenment, peace, and service to humanity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_two">
+                <div class="nav_menu_main">
+                    <div class="nav_menu_inner flex flex-row justify-evenly items-center">
+                        <a href="#">Home</a>
+                        <a href="#">Quran</a>
+                        <a href="#">Duah</a>
+                        <a href="#">Hadis</a>
+                        <a href="#">Namaz</a>
+                        <a href="#">Live Radio</a>
+                        <a href="#">Live TV</a>
+                        <a href="#">History</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--*Navbar Section Ends-->
+    <!--*Live Radio Section Starts-->
+    <section class="live_radio_main">
+        <div class="live_radio_inner flex flex-col items-center gap-4">
+            <div class="live_radio_title_main">
+                <p>Live Radio <span><i class="fa-regular fa-circle-dot animate__animated animate__heartBeat animate animate__infinite"></i></span></p>
+            </div>
+            <div class="radio_player flex justify-center">
+                <div class="radio_player_inner flex flex-row gap-4 justify-center items-center bg-black w-96 h-10">
+                    <span><i class="fa-solid fa-backward-fast"></i></span>
+                    <div>
+                        <span id="playPause" onclick="resRadioApi()"><i class="fa-solid fa-circle-play"></i></span>
+                    </div>
+                    <span><i class="fa-solid fa-forward-fast"></i></span>
+                </div>
+                <div id="radioOutput"></div>
+            </div>
+        </div>
+    </section>
+    <!--*Live Radio Section Ends-->
+    <!--*Banner Section Starts-->
+    <section class="banner_main flex justify-center">
+        <div class="banner_inner">
+            <div class="content_main flex flex-col justify-center items-center">
+                <div class="heading_small_txt">
+                    <p>The Light Of Truth</p>
+                </div>
+                <div class="heading_big_txt text-center">
+                    <p>LEARN, DISCUSS & <br>SHARE ISLAMIC KNOWLEDGE</p>
+                </div>
+                <div class="txt text-center">
+                    <p><span>" The Light Of Truth "</span> is a social network focused around <br> various islamic content,
+                        including tafsir, hadith, and Muslim history.</p>
+                </div>
+                <button>Launch</button>
+            </div>
+        </div>
+    </section>
+    <!--*Banner Section Ends-->
+    <!--*Slider Section Starts-->
+    <section class="slider_main">
+        <div class="slider_inner">
+            <div class="first_slider owl-carousel owl-theme">
+                <div class="item">
+                    <div class="item_inner flex flex-col items-start p-10">
+                        <span><i class="fa-solid fa-book-quran"></i></span>
+                        <div class="heading">
+                            <p>Quran Recitation</p>
+                        </div>
+                        <div class="txt">
+                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
+                        </div>
+                        <button>More...</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_inner flex flex-col items-start p-10">
+                        <span><i class="fa-solid fa-mosque"></i></span>
+                        <div class="heading">
+                            <p>Namaz Time</p>
+                        </div>
+                        <div class="txt">
+                            <p>Accurate timings for the five daily prayers to stay connected with your faith.</p>
+                        </div>
+                        <button>More...</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_inner flex flex-col items-start p-10">
+                        <span><i class="fa-solid fa-hands-praying"></i></span>
+                        <div class="heading">
+                            <p>Daily Duah</p>
+                        </div>
+                        <div class="txt">
+                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
+                        </div>
+                        <button>More...</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item_inner flex flex-col items-start p-10">
+                        <span><i class="fa-solid fa-star-and-crescent"></i></span>
+                        <div class="heading">
+                            <p>Islamic History</p>
+                        </div>
+                        <div class="txt">
+                            <p>Listen to your favorite Qaris, specify repetition sequences, and view Tafseer for Ayah.</p>
+                        </div>
+                        <button>More...</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--*Slider Section Ends-->
+
+
+    <br><br><br>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js" integrity="sha512-NeFv3hB6XGV+0y96NVxoWIkhrs1eC3KXBJ9OJiTFktvbzJ/0Kk7Rmm9hJ2/c2wJjy6wG0a0lIgehHjCTDLRwWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/regular.min.js" integrity="sha512-kOmvRi+0imoekwslOzP/X1LXQnzcttzqYYt3urKD4nhd5fMYwRfXgDS5Nh7b7pQjKPjBPSX9PmhCLrkfkxUcBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
