@@ -118,9 +118,7 @@
 .radio_player_inner #playPause {
     color: rgb(190, 174, 174);
 }
-
-
-
+/*!Live Radio Ends*/
 /*!Banner Section Starts*/
 .banner_main {
     width: 90%;
@@ -192,6 +190,24 @@
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 /*!Banner Section Ends*/
+/*!Islamic Resources Title Starts*/
+.islamic_resources_title_main {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.islamic_resources_title_inner {
+    width: 100%;
+}
+
+.islamic_resources_title_inner p {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: rgba(65, 5, 5);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+/*!Islamic Resources Title Ends*/
 /*!Slider Section Starts*/
 .slider_main {
     width: 100%;
@@ -245,3 +261,243 @@
     border: 1px solid rgb(65, 5, 5);
 }
 /*!Slider Section Ends*/
+/*!Live TV Title Starts*/
+.live_tv_title_main {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.live_tv_title_inner {
+    width: 100%;
+}
+.live_tv_title_inner p {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: rgba(65, 5, 5);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+/*!Live TV Title Ends*/
+/*!Live TV Section Starts*/
+.live_tv_main {
+    width: 100%;
+}
+.live_tv_inner {
+    width: 100%;
+}
+.makkah_tv {
+    width: 100%;
+}
+.peace_tv {
+    width: 100%;
+}
+.makkah_tv .makkah_btn{
+    width: 10%;
+    height: 150px;
+    background-color: transparent;
+    border: 5px solid rgba(65, 5, 5);
+    padding: 20px;
+}
+.peace_tv .peace_btn {
+    width: 10%;
+    height: 150px;
+    background-color: transparent;
+    border: 5px solid rgba(65, 5, 5);
+    padding: 20px;
+}
+.makkah_tv .makkah_btn p{
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(82, 83, 8);
+}
+.peace_tv .peace_btn p{
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(82, 83, 8);
+}
+.makkah_tv .makkah_btn:hover{
+    background-color: transparent;
+}
+.peace_tv .peace_btn:hover{
+    background-color: transparent;
+}
+.modal_cus {
+    width: 100%;
+}
+.modal_box_cus {
+    max-width: 50rem;
+    background-color: rgba(65, 5, 5);
+}
+.modal_form_cus {
+    width: 100%;
+}
+.crs_btn {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.video_play {
+    width: 100%;
+    height: 420px;
+    background-color: rgb(240, 243, 243);
+}
+#makkahTvVideo {
+    width: 100%;
+    height: 420px;
+}
+#peaceTvVideo {
+    width: 100%;
+    height: 420px;
+}
+/*!Live TV Section Ends*/
+/*!Surah Play Starts*/
+.surah_play_main {
+    width: 100%;
+    margin-top: 50px;
+}
+.surah_play_inner {
+    width: 100%;
+}
+.surah_title {
+    width: 100%;
+}
+.surah_title p {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: rgba(65, 5, 5);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.surah_play_section_main {
+    width: 100%;
+    margin-top: 50px;
+}
+.surah_play_section_inner {
+    width: 90%;
+    margin: auto;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    border: 5px solid rgba(65, 5, 5);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/recite.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.search_btn_main {
+    width: 100%;
+}
+.search_btn_inner {
+    width: 100%;
+    height: 60px;
+}
+.search_btn_inner div input{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 18px 0 0 18px;
+    -webkit-border-radius: 18px 0 0 18px;
+    -moz-border-radius: 18px 0 0 18px;
+    -ms-border-radius: 18px 0 0 18px;
+    -o-border-radius: 18px 0 0 18px;
+    border: 1px solid rgba(65, 5, 5);
+    color: #000000;
+}
+.search_btn_inner div input:focus{
+    outline: none;
+}
+.search_btn_inner div input::placeholder{
+    color: #414040;
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
+.search_btn_inner button{
+    width: 70px;
+    height: 40px;
+    background-color: rgba(65, 5, 5);
+    padding: 10px;
+    border-radius: 0 18px 18px 0;
+    -webkit-border-radius: 0 18px 18px 0;
+    -moz-border-radius: 0 18px 18px 0;
+    -ms-border-radius: 0 18px 18px 0;
+    -o-border-radius: 0 18px 18px 0;
+}
+.surah_name .en {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.surah_name .ar {
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(211, 147, 9);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.surah_tafsir p {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    color: rgba(65, 5, 5);
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.surah_tafsir .ar {
+    font-family: "Amiri", serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 60px;
+    word-spacing: 3px;
+    color: rgb(211, 147, 9);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.surah_tafsir .en {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    line-height: 40px;
+    word-spacing: 2px;
+}
+.surah_tafsir .bn {
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    line-height: 40px;
+    word-spacing: 2px;
+}
+.surah_player_dgn {
+    width: 10%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 180px;
+    -webkit-border-radius: 180px;
+    -moz-border-radius: 180px;
+    -ms-border-radius: 180px;
+    -o-border-radius: 180px;
+}
+.surah_player_dgn span{
+    color: rgba(65, 5, 5);
+    font-size: 20px;
+}
+.surah_player_dgn button{
+    color: rgba(65, 5, 5);
+    font-size: 20px;
+}
+.last_message {
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #b6a406;
+}
+/*!Surah Play Ends*/
