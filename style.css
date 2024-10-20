@@ -101,7 +101,7 @@
     color: rgb(240, 7, 7);
 }
 .radio_player {
-    width: 12%;
+    width: 200px;
 }
 .radio_player_inner {
     width: 100%;
@@ -189,6 +189,19 @@
     -o-border-radius: 8px;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
+/*For Responsive*/
+@media only screen and (max-width:730px){
+    .banner_main {
+        height: 600px !important;
+    }
+    .banner_inner {
+        height: 540px !important;
+    }
+    .content_main {
+        height: 540px !important;
+    }
+}
+
 /*!Banner Section Ends*/
 /*!Islamic Resources Title Starts*/
 .islamic_resources_title_main {
@@ -287,20 +300,22 @@
 }
 .makkah_tv {
     width: 100%;
+    height: 200px;
 }
 .peace_tv {
     width: 100%;
+    height: 200px;
 }
 .makkah_tv .makkah_btn{
-    width: 10%;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     background-color: transparent;
     border: 5px solid rgba(65, 5, 5);
     padding: 20px;
 }
 .peace_tv .peace_btn {
-    width: 10%;
-    height: 150px;
+    width: 200px;
+    height: 100px;
     background-color: transparent;
     border: 5px solid rgba(65, 5, 5);
     padding: 20px;
