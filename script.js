@@ -58,9 +58,9 @@ function getInput() {
 function resSurahApi(recUserValue) {
     catchSurahLoader.style.display = 'block';
     const inputValue = recUserValue;
-    const apiOne = fetch(`http://api.alquran.cloud/v1/surah/${inputValue}/en.asad`)
-    const apiTwo = fetch(`http://api.alquran.cloud/v1/surah/${inputValue}/ar.alafasy`)
-    const apiThree = fetch(`http://api.alquran.cloud/v1/surah/${inputValue}/bn.bengali`)
+    const apiOne = fetch(`https://api.alquran.cloud/v1/surah/${inputValue}/en.asad`)
+    const apiTwo = fetch(`https://api.alquran.cloud/v1/surah/${inputValue}/ar.alafasy`)
+    const apiThree = fetch(`https://api.alquran.cloud/v1/surah/${inputValue}/bn.bengali`)
     Promise.all([apiOne, apiTwo, apiThree])
         .then(responses => Promise.all(responses.map(res => res.json())))
         .then(data => getSurahApi(data[0], data[1], data[2]))
