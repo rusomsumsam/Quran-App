@@ -4,7 +4,7 @@ import fs from 'fs';
 
 // Function to get all HTML files dynamically
 function getHtmlFiles(dir) {
-    base: '/PracticeVite/'; //এটা github এ আপনার dist folder আলাদা branch এ subtree করে deploy করার জন্য মাকঝকানে নামটা repo name
+    base: '/Quran-App/'; //এটা github এ আপনার dist folder আলাদা branch এ subtree করে deploy করার জন্য মাকঝকানে নামটা repo name
     let files = fs.readdirSync(dir);
     let htmlFiles = {};
 
