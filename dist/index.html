@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-  <script type="module" crossorigin src="/assets/index-mC2C9lQk.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BUTh38aN.css">
+  <script type="module" crossorigin src="/assets/index-S8AgnOq4.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BUq_FBNf.css">
 </head>
 <body>
     <!--*Navbar Section Starts-->
@@ -117,11 +117,12 @@
             <div class="live_radio_title_main">
                 <p>Live Radio <span><i class="fa-regular fa-circle-dot animate__animated animate__heartBeat animate animate__infinite"></i></span></p>
             </div>
-            <div class="radio_player flex justify-center">
+            <button id="btnRadioCus">Play <i class="fa-solid fa-circle-play"></i></button>
+            <div id="hiddenRadio" class="radio_player hidden">
                 <div class="radio_player_inner flex flex-row gap-4 justify-center items-center bg-black w-96 h-10">
                     <span><i class="fa-solid fa-backward-fast"></i></span>
                     <div>
-                        <span id="playPause" onclick="resRadioApi()"><i class="fa-solid fa-circle-play"></i></span>
+                        <button id="playPause"><i class="fa-solid fa-circle-play"></i></button>
                     </div>
                     <span><i class="fa-solid fa-forward-fast"></i></span>
                 </div>
