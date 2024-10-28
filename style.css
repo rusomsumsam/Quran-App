@@ -113,10 +113,26 @@
 }
 .radio_player_inner span {
     font-size: 24px;
-    color: rgba(65, 5, 5);
+    color: rgb(65, 5, 5);
 }
 .radio_player_inner #playPause {
     color: rgb(190, 174, 174);
+    font-size: 20px;
+}
+#btnRadioCus {
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    color: rgba(65, 5, 5);
+    font-family: "Lora", serif;
+    font-weight: 900px;
+    font-size: 20px;
+    border: 5px solid rgb(65, 5, 5);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 /*!Live Radio Ends*/
 /*!Banner Section Starts*/

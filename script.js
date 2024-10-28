@@ -1,5 +1,41 @@
 'use strict'
 
+//*Radio Player Starts
+const catchPlayPause = document.getElementById('playPause');
+const catchBtnRadioCus = document.getElementById('btnRadioCus');
+const catchHiddenRadio = document.getElementById('hiddenRadio');
+const catchRadioOutput = document.getElementById('radioOutput');
+
+function resRadioApi() {
+    fetch(`https://mp3quran.net/api/v3/radios?language=eng`)
+        .then(res => res.json())
+        .then(data => getRadioApiData(data))
+        .catch(error => alert('There must be some error'))
+}
+
+function getRadioApiData(recRadioData) {
+    const radioData = recRadioData;
+    catchRadioOutput.innerHTML = `<audio id="radioPlayer" src="${radioData.radios[11].url}"></audio>`
+    const catchRadioPlayer = document.getElementById('radioPlayer');
+    function pausePlayBtn() {
+        if (catchRadioPlayer.paused) {
+            catchRadioPlayer.play();
+            catchPlayPause.innerHTML = `<i class="fa-solid fa-circle-pause"></i>`;
+        } else {
+            catchRadioPlayer.pause();
+            catchPlayPause.innerHTML = `<i class="fa-solid fa-circle-play"></i>`;
+        }
+    }
+    catchPlayPause.onclick = () => {
+        pausePlayBtn();
+    }
+}
+catchBtnRadioCus.addEventListener('click', function () {
+    catchBtnRadioCus.style.display = 'none';
+    catchHiddenRadio.style.display = 'block';
+    resRadioApi();
+})
+//*Radio Player Ends
 //*Surah Play Starts
 const catchSurahSearchInpt = document.getElementById('surahSearchInpt');
 const catchSurahNumberBtn = document.getElementById('surahNumberBtn');
@@ -28,6 +64,7 @@ function resSurahApi(recUserValue) {
     Promise.all([apiOne, apiTwo, apiThree])
         .then(responses => Promise.all(responses.map(res => res.json())))
         .then(data => getSurahApi(data[0], data[1], data[2]))
+        .catch(error => alert('There must be some error'))
 }
 
 catchSurahLoader.style.display = 'none';
@@ -111,34 +148,6 @@ $('.first_slider').owlCarousel({
     }
 })
 //*Slider Section Ends
-//*Radio Player Starts
-const catchPlayPause = document.getElementById('playPause');
-const catchRadioOutput = document.getElementById('radioOutput');
-
-function resRadioApi() {
-    fetch(`https://mp3quran.net/api/v3/radios?language=eng`)
-        .then(res => res.json())
-        .then(data => getRadioApiData(data))
-}
-
-function getRadioApiData(recRadioData) {
-    const radioData = recRadioData;
-    catchRadioOutput.innerHTML = `<audio id="radioPlayer" src="${radioData.radios[11].url}"></audio>`
-    const catchRadioPlayer = document.getElementById('radioPlayer');
-    function pausePlayBtn() {
-        if (catchRadioPlayer.paused) {
-            catchRadioPlayer.play();
-            catchPlayPause.innerHTML = `<i class="fa-solid fa-circle-pause"></i>`;
-        } else {
-            catchRadioPlayer.pause();
-            catchPlayPause.innerHTML = `<i class="fa-solid fa-circle-play"></i>`;
-        }
-    }
-    catchPlayPause.onclick = () => {
-        pausePlayBtn();
-    }
-}
-//*Radio Player Ends
 //*Live TV Starts
 const catchMakkahTvVideo = document.getElementById('makkahTvVideo');
 const catchMakkahBtn = document.getElementById('makkahBtn');

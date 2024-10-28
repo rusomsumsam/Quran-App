@@ -117,11 +117,12 @@
             <div class="live_radio_title_main">
                 <p>Live Radio <span><i class="fa-regular fa-circle-dot animate__animated animate__heartBeat animate animate__infinite"></i></span></p>
             </div>
-            <div class="radio_player flex justify-center">
+            <button id="btnRadioCus">Play <i class="fa-solid fa-circle-play"></i></button>
+            <div id="hiddenRadio" class="radio_player hidden">
                 <div class="radio_player_inner flex flex-row gap-4 justify-center items-center bg-black w-96 h-10">
                     <span><i class="fa-solid fa-backward-fast"></i></span>
                     <div>
-                        <span id="playPause" onclick="resRadioApi()"><i class="fa-solid fa-circle-play"></i></span>
+                        <button id="playPause"><i class="fa-solid fa-circle-play"></i></button>
                     </div>
                     <span><i class="fa-solid fa-forward-fast"></i></span>
                 </div>
